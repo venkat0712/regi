@@ -1,0 +1,36 @@
+package com.example.eventhandling1;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+    EditText name;
+    Button btn;
+    TextView welcome;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        name = findViewById(R.id.name);
+        btn = findViewById(R.id.btn);
+        welcome = findViewById(R.id.welcome);
+    }
+
+    public void submitName(View view) {
+        String userName = name.getText().toString().trim();
+        if (!userName.isEmpty()) {
+            String welcomeMessage = "Welcome, " + userName + "!";
+            welcome.setText(welcomeMessage);
+        } else {
+            welcome.setText("Enter Name.");
+        }
+    }
+}

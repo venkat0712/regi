@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="#F4B5B5">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="50sp"
+        android:hint="Enter your name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="17dp"
+        android:onClick="submitName"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:layout_marginTop="20sp"
+        android:hint="Msg' ll be displayed here!"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#100F0F"
+        android:textColor="@color/black"
+        android:layout_marginBottom="250dp"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
