@@ -80,3 +80,48 @@
 
 
 </RelativeLayout>
+
+
+package com.example.registrationform;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+    private EditText editTextName, editTextEmail, editTextMobile, editTextAddress, editTextDOB;
+    private Button buttonSubmit;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        editTextName = findViewById(R.id.editTextName);
+        editTextEmail = findViewById(R.id.editTextEmail);
+
+        buttonSubmit = findViewById(R.id.buttonSubmit);
+
+        buttonSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                submitForm();
+            }
+        });
+    }
+
+    private void submitForm() {
+        String name = editTextName.getText().toString();
+        String email = editTextEmail.getText().toString();
+
+        String toastMessage = "Your Name is: "+"\t" + name +
+
+                "\nYour Email Id is : " + "\t" + email ;
+                Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show();
+    }
+}
