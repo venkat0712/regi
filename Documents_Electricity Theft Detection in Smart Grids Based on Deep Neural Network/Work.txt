@@ -1,0 +1,40 @@
+Service Provider
+
+Login,
+Train & Test Electricity Data Sets, 
+View Electricity Datasets Accuracy in Bar Chart, 
+View Electricity Datasets Accuracy Results, 
+View Prediction Of Electricity Theft Type, 
+View Electricity Theft Type Ratio, 
+Download Predicted Data Sets, 
+View Electricity Theft Ratio Theft Results, 
+View All Remote Users.
+
+
+Remote User
+
+
+REGISTER AND LOGIN,
+PREDICT ELECTRICITY THEFT TYPE,
+VIEW YOUR PROFILE. 
+
+
+Members
+
+LCLid,
+Age,
+Sex,
+day,
+energy_median,
+energy_mean,
+energy_max,
+energy_count,
+energy_std,
+energy_sum,
+energy_min,
+Prediction.
+
+
+
+
+
